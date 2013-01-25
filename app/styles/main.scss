@@ -1,0 +1,29 @@
+// CSS Reset
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Kavoon);
+@import "reset.css";
+@import "compass/css3/box-shadow";
+@import "compass/css3/border-radius";
+@import "compass/css3/transition";
+/* ==========================================
+    main
+ ===========================================*/
+ a, a:hover{text-decoration:none}
+ html{background: url(../images/gray_jean.jpg) repeat}
+ body{background:transparent;}
+
+ p#logo a{line-height:50px;font-family: Pacifico, serif; font-size:36px; text-shadow: 0 -2px #949494,  0 2px 0 #fff; color:#cbcbcb;}
+
+::-webkit-input-placeholder { color:#bbb; padding: 0 10px; font-style: italic; font-size:12px; line-height:20px; font-family: serif }
+::-moz-placeholder { color:#bbb; padding: 0 10px; font-style: italic; font-size:12px; line-height:20px; font-family: serif} /* firefox 19+ */
+
+
+/* ==========================================
+    Wrapper
+ ===========================================*/
+ div#wrapper{ width:400px; margin:60px auto}
+ p#url input{border:none; background:#fff; @include box-shadow( #fff 0  2px 0, 0 -2px 0 #efefef); height:20px; width:400px; padding: 0 10px; font-style: italic; font-size:14px; line-height:20px; font-family: serif; color:#888}
+
+ p#submit-button input{ border:none; background: #449eb4; @include border-radius(5px); padding:5px 10px; width:150px; font-family: Kavoon, serif; color:#e8eeef; text-shadow: 0 1px 0 #333; @include box-shadow( 4px 6px 0 #83b3c0); @include transition(.1s all ease-out)}
+
+p#submit-button input:active{@include box-shadow( 1px 1px 0 #83b3c0);}
