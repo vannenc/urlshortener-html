@@ -18,16 +18,33 @@
     </head>
     <body>
 
+        <div id="overlay">
+            
+        </div>
         <div id="wrapper">
             
             <p id="logo"><a href="">Url Shortener</a></p>
 
-            <form action="" method="post">
-                <p id="url"><input type="text" name="url" placeholder="enter your url here"></p>
 
+
+            <form action="" method="post" id="form-create">
+                <p id="url"><input type="text" name="url" placeholder="enter your url here" id="url-text"></p>
+               
+                <div id="errors">
+
+                </div>
+
+                <div id="success">
+                    <p>Shorten link</p>
+                    <input type="text" name="tiny" value="http://google.com/324sa" >
+                </div>
                 <p id="submit-button"><input type="submit" name="submit" value="Shorten"></p>
             </form>
 
+
+            <div id="author">
+                <p>Created by <a href="http://vannen.ws">Vannen Caremben</a>. Fork it on <a href="https://github.com/vannenc/urlshortener/">github</a></p>
+            </div>
         </div>
 
         <!--[if lt IE 7]>
@@ -38,7 +55,7 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="scripts/vendor/jquery.min.js"><\/script>')</script>
-        
+        <script type="text/javascript" src="scripts/main.js"></script>
         
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
