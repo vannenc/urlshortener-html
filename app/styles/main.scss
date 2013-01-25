@@ -12,7 +12,8 @@
  html{background: url(../images/gray_jean.jpg) repeat}
  body{background:transparent;}
 
- p#logo a{line-height:50px;font-family: Pacifico, serif; font-size:36px; text-shadow: 0 -2px #949494,  0 2px 0 #fff; color:#cbcbcb;}
+p#logo{text-align:center;}
+p#logo a{line-height:50px;font-family: Pacifico, serif; font-size:36px; text-shadow: 0 -2px #949494,  0 2px 0 #fff; color:#cbcbcb; text-align:center;}
 
 ::-webkit-input-placeholder { color:#bbb; padding: 0 10px; font-style: italic; font-size:12px; line-height:20px; font-family: serif }
 ::-moz-placeholder { color:#bbb; padding: 0 10px; font-style: italic; font-size:12px; line-height:20px; font-family: serif} /* firefox 19+ */
