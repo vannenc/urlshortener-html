@@ -28,6 +28,7 @@
 
 
             <form action="" method="post" id="form-create">
+                {{ csrf_token}}
                 <p id="url"><input type="text" name="url" placeholder="enter your url here" id="url-text"></p>
                
                 <div id="errors">
@@ -36,7 +37,7 @@
 
                 <div id="success">
                     <p>Shorten link</p>
-                    <input type="text" name="tiny" value="http://google.com/324sa" >
+                    <input type="text" name="tiny" value="" >
                 </div>
                 <p id="submit-button"><input type="submit" name="submit" value="Shorten"></p>
             </form>
